@@ -1,6 +1,6 @@
 DTNSIM generate dictionaries Tool
 
-In this folder there are python and bash scripts which allow 
+In this folder there are python scripts which allow 
 to generate pickle dictionaries from the .csv before generated
 
 Before running the script, the directories data/ and dicts/ must be created 
