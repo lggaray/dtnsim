@@ -1,0 +1,1465 @@
+version 2
+run General-0-20210308-16:22:24-11566
+attr configname General
+attr datetime 20210308-16:22:24
+attr experiment General
+attr inifile simulations/dtnsim_demo/traffic300.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network src.dtnsim
+attr processid 11566
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param dtnsim.node[*].dtn.sdrSize 1024
+param dtnsim.nodesNumber 7
+param dtnsim.node[1..5].icon "\"device\""
+param dtnsim.node[6].icon "\"satellite\""
+param dtnsim.node[7].icon "\"device\""
+param dtnsim.node[*].dtn.routing "\"cgrModelRev17\""
+param dtnsim.central.contactsFile "\"/home/omn/git/dtnsim/simulations/dtnsim_demo/contactPlan/cPlan.txt\""
+param dtnsim.node[*].dtn.routingType "\"routeListType:allPaths-firstEnding,volumeAware:allContacts,extensionBlock:on,contactPlan:global\""
+param dtnsim.node[*].dtn.printRoutingDebug true
+param dtnsim.node[1].app.enable true
+param dtnsim.node[1].app.bundlesNumber "\"3, 4, 7, 4, 2, 9, 8, 1\""
+param dtnsim.node[1].app.start "\"7201, 36001, 37801, 43201, 48601, 50401, 54001, 79201\""
+param dtnsim.node[1].app.destinationEid "\"7, 7, 7, 7, 7, 7, 7, 7\""
+param dtnsim.node[1].app.size "\"128, 128, 128, 128, 128, 128, 128, 128\""
+param dtnsim.node[2].app.enable true
+param dtnsim.node[2].app.bundlesNumber "\"1, 2, 5, 2, 8, 2, 9, 7, 4\""
+param dtnsim.node[2].app.start "\"1, 1801, 9001, 10801, 12601, 39601, 73801, 75601, 82801\""
+param dtnsim.node[2].app.destinationEid "\"7, 7, 7, 7, 7, 7, 7, 7, 7\""
+param dtnsim.node[2].app.size "\"128, 128, 128, 128, 128, 128, 128, 128, 128\""
+param dtnsim.node[3].app.enable true
+param dtnsim.node[3].app.bundlesNumber "\"2, 2, 7, 253, 4, 2\""
+param dtnsim.node[3].app.start "\"5401, 25201, 30601, 41401, 57601, 70201\""
+param dtnsim.node[3].app.destinationEid "\"7, 7, 7, 7, 7, 7\""
+param dtnsim.node[3].app.size "\"128, 128, 128, 128, 128, 128\""
+param dtnsim.node[4].app.enable true
+param dtnsim.node[4].app.bundlesNumber "\"1, 3, 5, 2, 6\""
+param dtnsim.node[4].app.start "\"14401, 61201, 68401, 77401, 84601\""
+param dtnsim.node[4].app.destinationEid "\"7, 7, 7, 7, 7\""
+param dtnsim.node[4].app.size "\"128, 128, 128, 128, 128\""
+param dtnsim.node[5].app.enable true
+param dtnsim.node[5].app.bundlesNumber "\"6, 4, 8, 5, 5, 1, 2, 2, 3, 2, 7\""
+param dtnsim.node[5].app.start "\"16201, 18001, 19801, 28801, 34201, 52201, 55801, 63001, 64801, 72001, 81001\""
+param dtnsim.node[5].app.destinationEid "\"7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7\""
+param dtnsim.node[5].app.size "\"128, 128, 128, 128, 128, 128, 128, 128, 128, 128, 128\""
+param dtnsim.node[6].app.enable true
+param dtnsim.node[6].app.bundlesNumber "\"2, 4, 5, 2, 1, 7, 2, 8, 7\""
+param dtnsim.node[6].app.start "\"3601, 21601, 23401, 27001, 32401, 45001, 46801, 59401, 66601\""
+param dtnsim.node[6].app.destinationEid "\"7, 7, 7, 7, 7, 7, 7, 7, 7\""
+param dtnsim.node[6].app.size "\"128, 128, 128, 128, 128, 128, 128, 128, 128\""
+
+scalar dtnsim.node[0].app appBundleReceivedDelay:mean -nan
+attr interpolationmode none
+attr source appBundleReceivedDelay
+attr title "appBundleReceivedDelay, mean"
+scalar dtnsim.node[0].app appBundleReceivedDelay:max -nan
+attr interpolationmode none
+attr source appBundleReceivedDelay
+attr title "appBundleReceivedDelay, max"
+scalar dtnsim.node[0].app appBundleReceivedDelay:min -nan
+attr interpolationmode none
+attr source appBundleReceivedDelay
+attr title "appBundleReceivedDelay, min"
+statistic dtnsim.node[0].app appBundleReceivedDelay:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source appBundleReceivedDelay
+attr title "appBundleReceivedDelay, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar dtnsim.node[0].app appBundleReceivedHops:mean -nan
+attr interpolationmode none
+attr source appBundleReceivedHops
+attr title "appBundleReceivedHops, mean"
+scalar dtnsim.node[0].app appBundleReceivedHops:max -nan
+attr interpolationmode none
+attr source appBundleReceivedHops
+attr title "appBundleReceivedHops, max"
+scalar dtnsim.node[0].app appBundleReceivedHops:min -nan
+attr interpolationmode none
+attr source appBundleReceivedHops
+attr title "appBundleReceivedHops, min"
+statistic dtnsim.node[0].app appBundleReceivedHops:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source appBundleReceivedHops
+attr title "appBundleReceivedHops, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar dtnsim.node[0].app appBundleReceived:count 0
+attr interpolationmode none
+attr source appBundleReceived
+attr title "appBundleReceived, count"
+scalar dtnsim.node[0].app appBundleSent:count 0
+attr interpolationmode none
+attr source appBundleSent
+attr title "appBundleSent, count"
+scalar dtnsim.node[0].dtn sdrBundlesDeleted:max -nan
+attr interpolationmode none
+attr source sdrBundlesDeleted
+attr title "sdrBundlesDeleted, max"
+scalar dtnsim.node[0].dtn dtnCgrCalls:count 0
+attr interpolationmode none
+attr source dtnCgrCalls
+attr title "dtnCgrCalls, count"
+scalar dtnsim.node[0].dtn routeCgrRouteTableEntriesExplored:max -nan
+attr interpolationmode none
+attr source routeCgrRouteTableEntriesExplored
+attr title "routeCgrRouteTableEntriesExplored, max"
+scalar dtnsim.node[0].dtn routeCgrRouteTableEntriesExplored:sum 0
+attr interpolationmode none
+attr source routeCgrRouteTableEntriesExplored
+attr title "routeCgrRouteTableEntriesExplored, sum"
+scalar dtnsim.node[0].dtn routeCgrRouteTableEntriesCreated:max -nan
+attr interpolationmode none
+attr source routeCgrRouteTableEntriesCreated
+attr title "routeCgrRouteTableEntriesCreated, max"
+scalar dtnsim.node[0].dtn routeCgrRouteTableEntriesCreated:sum 0
+attr interpolationmode none
+attr source routeCgrRouteTableEntriesCreated
+attr title "routeCgrRouteTableEntriesCreated, sum"
+scalar dtnsim.node[0].dtn routeCgrDijkstraLoops:sum 0
+attr interpolationmode none
+attr source routeCgrDijkstraLoops
+attr title "routeCgrDijkstraLoops, sum"
+scalar dtnsim.node[0].dtn routeCgrDijkstraCalls:sum 0
+attr interpolationmode none
+attr source routeCgrDijkstraCalls
+attr title "routeCgrDijkstraCalls, sum"
+scalar dtnsim.node[0].dtn sdrBytesStored:timeavg -nan
+attr interpolationmode none
+attr source sdrBytesStored
+attr title "sdrBytesStored, timeavg"
+scalar dtnsim.node[0].dtn sdrBytesStored:max -nan
+attr interpolationmode none
+attr source sdrBytesStored
+attr title "sdrBytesStored, max"
+scalar dtnsim.node[0].dtn sdrBundleStored:timeavg -nan
+attr interpolationmode none
+attr source sdrBundleStored
+attr title "sdrBundleStored, timeavg"
+scalar dtnsim.node[0].dtn sdrBundleStored:max -nan
+attr interpolationmode none
+attr source sdrBundleStored
+attr title "sdrBundleStored, max"
+scalar dtnsim.node[0].dtn sdrBundleStored:sum 0
+attr interpolationmode none
+attr source sdrBundleStored
+attr title "sdrBundleStored, sum"
+scalar dtnsim.node[0].dtn dtnBundleReRouted:count 0
+attr interpolationmode none
+attr source dtnBundleReRouted
+attr title "dtnBundleReRouted, count"
+scalar dtnsim.node[0].dtn dtnBundleReceivedFromApp:count 0
+attr interpolationmode none
+attr source dtnBundleReceivedFromApp
+attr title "dtnBundleReceivedFromApp, count"
+scalar dtnsim.node[0].dtn dtnBundleReceivedFromCom:count 0
+attr interpolationmode none
+attr source dtnBundleReceivedFromCom
+attr title "dtnBundleReceivedFromCom, count"
+statistic dtnsim.node[0].dtn dtnBundleSentToAppRevisitedHops:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source dtnBundleSentToAppRevisitedHops
+attr title "dtnBundleSentToAppRevisitedHops, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+statistic dtnsim.node[0].dtn dtnBundleSentToAppHopCount:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source dtnBundleSentToAppHopCount
+attr title "dtnBundleSentToAppHopCount, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar dtnsim.node[0].dtn dtnBundleSentToApp:count 0
+attr interpolationmode none
+attr source dtnBundleSentToApp
+attr title "dtnBundleSentToApp, count"
+scalar dtnsim.node[0].dtn dtnBundleSentToCom:count 0
+attr interpolationmode none
+attr source dtnBundleSentToCom
+attr title "dtnBundleSentToCom, count"
+scalar dtnsim.node[1].app appBundleReceivedDelay:mean -nan
+attr interpolationmode none
+attr source appBundleReceivedDelay
+attr title "appBundleReceivedDelay, mean"
+scalar dtnsim.node[1].app appBundleReceivedDelay:max -nan
+attr interpolationmode none
+attr source appBundleReceivedDelay
+attr title "appBundleReceivedDelay, max"
+scalar dtnsim.node[1].app appBundleReceivedDelay:min -nan
+attr interpolationmode none
+attr source appBundleReceivedDelay
+attr title "appBundleReceivedDelay, min"
+statistic dtnsim.node[1].app appBundleReceivedDelay:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source appBundleReceivedDelay
+attr title "appBundleReceivedDelay, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar dtnsim.node[1].app appBundleReceivedHops:mean -nan
+attr interpolationmode none
+attr source appBundleReceivedHops
+attr title "appBundleReceivedHops, mean"
+scalar dtnsim.node[1].app appBundleReceivedHops:max -nan
+attr interpolationmode none
+attr source appBundleReceivedHops
+attr title "appBundleReceivedHops, max"
+scalar dtnsim.node[1].app appBundleReceivedHops:min -nan
+attr interpolationmode none
+attr source appBundleReceivedHops
+attr title "appBundleReceivedHops, min"
+statistic dtnsim.node[1].app appBundleReceivedHops:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source appBundleReceivedHops
+attr title "appBundleReceivedHops, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar dtnsim.node[1].app appBundleReceived:count 0
+attr interpolationmode none
+attr source appBundleReceived
+attr title "appBundleReceived, count"
+scalar dtnsim.node[1].app appBundleSent:count 38
+attr interpolationmode none
+attr source appBundleSent
+attr title "appBundleSent, count"
+scalar dtnsim.node[1].dtn sdrBundlesDeleted:max 1
+attr interpolationmode none
+attr source sdrBundlesDeleted
+attr title "sdrBundlesDeleted, max"
+scalar dtnsim.node[1].dtn dtnCgrCalls:count 77
+attr interpolationmode none
+attr source dtnCgrCalls
+attr title "dtnCgrCalls, count"
+scalar dtnsim.node[1].dtn routeCgrRouteTableEntriesExplored:max 1
+attr interpolationmode none
+attr source routeCgrRouteTableEntriesExplored
+attr title "routeCgrRouteTableEntriesExplored, max"
+scalar dtnsim.node[1].dtn routeCgrRouteTableEntriesExplored:sum 38
+attr interpolationmode none
+attr source routeCgrRouteTableEntriesExplored
+attr title "routeCgrRouteTableEntriesExplored, sum"
+scalar dtnsim.node[1].dtn routeCgrRouteTableEntriesCreated:max 1
+attr interpolationmode none
+attr source routeCgrRouteTableEntriesCreated
+attr title "routeCgrRouteTableEntriesCreated, max"
+scalar dtnsim.node[1].dtn routeCgrRouteTableEntriesCreated:sum 1
+attr interpolationmode none
+attr source routeCgrRouteTableEntriesCreated
+attr title "routeCgrRouteTableEntriesCreated, sum"
+scalar dtnsim.node[1].dtn routeCgrDijkstraLoops:sum 8
+attr interpolationmode none
+attr source routeCgrDijkstraLoops
+attr title "routeCgrDijkstraLoops, sum"
+scalar dtnsim.node[1].dtn routeCgrDijkstraCalls:sum 2
+attr interpolationmode none
+attr source routeCgrDijkstraCalls
+attr title "routeCgrDijkstraCalls, sum"
+scalar dtnsim.node[1].dtn sdrBytesStored:timeavg 1.7635555555556e-08
+attr interpolationmode none
+attr source sdrBytesStored
+attr title "sdrBytesStored, timeavg"
+scalar dtnsim.node[1].dtn sdrBytesStored:max 1024
+attr interpolationmode none
+attr source sdrBytesStored
+attr title "sdrBytesStored, max"
+scalar dtnsim.node[1].dtn sdrBundleStored:timeavg 1.3777777777778e-10
+attr interpolationmode none
+attr source sdrBundleStored
+attr title "sdrBundleStored, timeavg"
+scalar dtnsim.node[1].dtn sdrBundleStored:max 8
+attr interpolationmode none
+attr source sdrBundleStored
+attr title "sdrBundleStored, max"
+scalar dtnsim.node[1].dtn sdrBundleStored:sum 270
+attr interpolationmode none
+attr source sdrBundleStored
+attr title "sdrBundleStored, sum"
+scalar dtnsim.node[1].dtn dtnBundleReRouted:count 0
+attr interpolationmode none
+attr source dtnBundleReRouted
+attr title "dtnBundleReRouted, count"
+scalar dtnsim.node[1].dtn dtnBundleReceivedFromApp:count 38
+attr interpolationmode none
+attr source dtnBundleReceivedFromApp
+attr title "dtnBundleReceivedFromApp, count"
+scalar dtnsim.node[1].dtn dtnBundleReceivedFromCom:count 39
+attr interpolationmode none
+attr source dtnBundleReceivedFromCom
+attr title "dtnBundleReceivedFromCom, count"
+statistic dtnsim.node[1].dtn dtnBundleSentToAppRevisitedHops:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source dtnBundleSentToAppRevisitedHops
+attr title "dtnBundleSentToAppRevisitedHops, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+statistic dtnsim.node[1].dtn dtnBundleSentToAppHopCount:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source dtnBundleSentToAppHopCount
+attr title "dtnBundleSentToAppHopCount, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar dtnsim.node[1].dtn dtnBundleSentToApp:count 0
+attr interpolationmode none
+attr source dtnBundleSentToApp
+attr title "dtnBundleSentToApp, count"
+scalar dtnsim.node[1].dtn dtnBundleSentToCom:count 76
+attr interpolationmode none
+attr source dtnBundleSentToCom
+attr title "dtnBundleSentToCom, count"
+scalar dtnsim.node[2].app appBundleReceivedDelay:mean -nan
+attr interpolationmode none
+attr source appBundleReceivedDelay
+attr title "appBundleReceivedDelay, mean"
+scalar dtnsim.node[2].app appBundleReceivedDelay:max -nan
+attr interpolationmode none
+attr source appBundleReceivedDelay
+attr title "appBundleReceivedDelay, max"
+scalar dtnsim.node[2].app appBundleReceivedDelay:min -nan
+attr interpolationmode none
+attr source appBundleReceivedDelay
+attr title "appBundleReceivedDelay, min"
+statistic dtnsim.node[2].app appBundleReceivedDelay:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source appBundleReceivedDelay
+attr title "appBundleReceivedDelay, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar dtnsim.node[2].app appBundleReceivedHops:mean -nan
+attr interpolationmode none
+attr source appBundleReceivedHops
+attr title "appBundleReceivedHops, mean"
+scalar dtnsim.node[2].app appBundleReceivedHops:max -nan
+attr interpolationmode none
+attr source appBundleReceivedHops
+attr title "appBundleReceivedHops, max"
+scalar dtnsim.node[2].app appBundleReceivedHops:min -nan
+attr interpolationmode none
+attr source appBundleReceivedHops
+attr title "appBundleReceivedHops, min"
+statistic dtnsim.node[2].app appBundleReceivedHops:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source appBundleReceivedHops
+attr title "appBundleReceivedHops, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar dtnsim.node[2].app appBundleReceived:count 0
+attr interpolationmode none
+attr source appBundleReceived
+attr title "appBundleReceived, count"
+scalar dtnsim.node[2].app appBundleSent:count 40
+attr interpolationmode none
+attr source appBundleSent
+attr title "appBundleSent, count"
+scalar dtnsim.node[2].dtn sdrBundlesDeleted:max 1
+attr interpolationmode none
+attr source sdrBundlesDeleted
+attr title "sdrBundlesDeleted, max"
+scalar dtnsim.node[2].dtn dtnCgrCalls:count 40
+attr interpolationmode none
+attr source dtnCgrCalls
+attr title "dtnCgrCalls, count"
+scalar dtnsim.node[2].dtn routeCgrRouteTableEntriesExplored:max 1
+attr interpolationmode none
+attr source routeCgrRouteTableEntriesExplored
+attr title "routeCgrRouteTableEntriesExplored, max"
+scalar dtnsim.node[2].dtn routeCgrRouteTableEntriesExplored:sum 40
+attr interpolationmode none
+attr source routeCgrRouteTableEntriesExplored
+attr title "routeCgrRouteTableEntriesExplored, sum"
+scalar dtnsim.node[2].dtn routeCgrRouteTableEntriesCreated:max 1
+attr interpolationmode none
+attr source routeCgrRouteTableEntriesCreated
+attr title "routeCgrRouteTableEntriesCreated, max"
+scalar dtnsim.node[2].dtn routeCgrRouteTableEntriesCreated:sum 1
+attr interpolationmode none
+attr source routeCgrRouteTableEntriesCreated
+attr title "routeCgrRouteTableEntriesCreated, sum"
+scalar dtnsim.node[2].dtn routeCgrDijkstraLoops:sum 7
+attr interpolationmode none
+attr source routeCgrDijkstraLoops
+attr title "routeCgrDijkstraLoops, sum"
+scalar dtnsim.node[2].dtn routeCgrDijkstraCalls:sum 2
+attr interpolationmode none
+attr source routeCgrDijkstraCalls
+attr title "routeCgrDijkstraCalls, sum"
+scalar dtnsim.node[2].dtn sdrBytesStored:timeavg 1.8204444444444e-08
+attr interpolationmode none
+attr source sdrBytesStored
+attr title "sdrBytesStored, timeavg"
+scalar dtnsim.node[2].dtn sdrBytesStored:max 1024
+attr interpolationmode none
+attr source sdrBytesStored
+attr title "sdrBytesStored, max"
+scalar dtnsim.node[2].dtn sdrBundleStored:timeavg 1.4222222222222e-10
+attr interpolationmode none
+attr source sdrBundleStored
+attr title "sdrBundleStored, timeavg"
+scalar dtnsim.node[2].dtn sdrBundleStored:max 8
+attr interpolationmode none
+attr source sdrBundleStored
+attr title "sdrBundleStored, max"
+scalar dtnsim.node[2].dtn sdrBundleStored:sum 239
+attr interpolationmode none
+attr source sdrBundleStored
+attr title "sdrBundleStored, sum"
+scalar dtnsim.node[2].dtn dtnBundleReRouted:count 0
+attr interpolationmode none
+attr source dtnBundleReRouted
+attr title "dtnBundleReRouted, count"
+scalar dtnsim.node[2].dtn dtnBundleReceivedFromApp:count 40
+attr interpolationmode none
+attr source dtnBundleReceivedFromApp
+attr title "dtnBundleReceivedFromApp, count"
+scalar dtnsim.node[2].dtn dtnBundleReceivedFromCom:count 0
+attr interpolationmode none
+attr source dtnBundleReceivedFromCom
+attr title "dtnBundleReceivedFromCom, count"
+statistic dtnsim.node[2].dtn dtnBundleSentToAppRevisitedHops:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source dtnBundleSentToAppRevisitedHops
+attr title "dtnBundleSentToAppRevisitedHops, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+statistic dtnsim.node[2].dtn dtnBundleSentToAppHopCount:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source dtnBundleSentToAppHopCount
+attr title "dtnBundleSentToAppHopCount, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar dtnsim.node[2].dtn dtnBundleSentToApp:count 0
+attr interpolationmode none
+attr source dtnBundleSentToApp
+attr title "dtnBundleSentToApp, count"
+scalar dtnsim.node[2].dtn dtnBundleSentToCom:count 39
+attr interpolationmode none
+attr source dtnBundleSentToCom
+attr title "dtnBundleSentToCom, count"
+scalar dtnsim.node[3].app appBundleReceivedDelay:mean -nan
+attr interpolationmode none
+attr source appBundleReceivedDelay
+attr title "appBundleReceivedDelay, mean"
+scalar dtnsim.node[3].app appBundleReceivedDelay:max -nan
+attr interpolationmode none
+attr source appBundleReceivedDelay
+attr title "appBundleReceivedDelay, max"
+scalar dtnsim.node[3].app appBundleReceivedDelay:min -nan
+attr interpolationmode none
+attr source appBundleReceivedDelay
+attr title "appBundleReceivedDelay, min"
+statistic dtnsim.node[3].app appBundleReceivedDelay:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source appBundleReceivedDelay
+attr title "appBundleReceivedDelay, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar dtnsim.node[3].app appBundleReceivedHops:mean -nan
+attr interpolationmode none
+attr source appBundleReceivedHops
+attr title "appBundleReceivedHops, mean"
+scalar dtnsim.node[3].app appBundleReceivedHops:max -nan
+attr interpolationmode none
+attr source appBundleReceivedHops
+attr title "appBundleReceivedHops, max"
+scalar dtnsim.node[3].app appBundleReceivedHops:min -nan
+attr interpolationmode none
+attr source appBundleReceivedHops
+attr title "appBundleReceivedHops, min"
+statistic dtnsim.node[3].app appBundleReceivedHops:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source appBundleReceivedHops
+attr title "appBundleReceivedHops, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar dtnsim.node[3].app appBundleReceived:count 0
+attr interpolationmode none
+attr source appBundleReceived
+attr title "appBundleReceived, count"
+scalar dtnsim.node[3].app appBundleSent:count 270
+attr interpolationmode none
+attr source appBundleSent
+attr title "appBundleSent, count"
+scalar dtnsim.node[3].dtn sdrBundlesDeleted:max 245
+attr interpolationmode none
+attr source sdrBundlesDeleted
+attr title "sdrBundlesDeleted, max"
+scalar dtnsim.node[3].dtn dtnCgrCalls:count 270
+attr interpolationmode none
+attr source dtnCgrCalls
+attr title "dtnCgrCalls, count"
+scalar dtnsim.node[3].dtn routeCgrRouteTableEntriesExplored:max 1
+attr interpolationmode none
+attr source routeCgrRouteTableEntriesExplored
+attr title "routeCgrRouteTableEntriesExplored, max"
+scalar dtnsim.node[3].dtn routeCgrRouteTableEntriesExplored:sum 270
+attr interpolationmode none
+attr source routeCgrRouteTableEntriesExplored
+attr title "routeCgrRouteTableEntriesExplored, sum"
+scalar dtnsim.node[3].dtn routeCgrRouteTableEntriesCreated:max 1
+attr interpolationmode none
+attr source routeCgrRouteTableEntriesCreated
+attr title "routeCgrRouteTableEntriesCreated, max"
+scalar dtnsim.node[3].dtn routeCgrRouteTableEntriesCreated:sum 1
+attr interpolationmode none
+attr source routeCgrRouteTableEntriesCreated
+attr title "routeCgrRouteTableEntriesCreated, sum"
+scalar dtnsim.node[3].dtn routeCgrDijkstraLoops:sum 7
+attr interpolationmode none
+attr source routeCgrDijkstraLoops
+attr title "routeCgrDijkstraLoops, sum"
+scalar dtnsim.node[3].dtn routeCgrDijkstraCalls:sum 2
+attr interpolationmode none
+attr source routeCgrDijkstraCalls
+attr title "routeCgrDijkstraCalls, sum"
+scalar dtnsim.node[3].dtn sdrBytesStored:timeavg 1.0998518518519e-08
+attr interpolationmode none
+attr source sdrBytesStored
+attr title "sdrBytesStored, timeavg"
+scalar dtnsim.node[3].dtn sdrBytesStored:max 1024
+attr interpolationmode none
+attr source sdrBytesStored
+attr title "sdrBytesStored, max"
+scalar dtnsim.node[3].dtn sdrBundleStored:timeavg 8.5925925925926e-11
+attr interpolationmode none
+attr source sdrBundleStored
+attr title "sdrBundleStored, timeavg"
+scalar dtnsim.node[3].dtn sdrBundleStored:max 8
+attr interpolationmode none
+attr source sdrBundleStored
+attr title "sdrBundleStored, max"
+scalar dtnsim.node[3].dtn sdrBundleStored:sum 2101
+attr interpolationmode none
+attr source sdrBundleStored
+attr title "sdrBundleStored, sum"
+scalar dtnsim.node[3].dtn dtnBundleReRouted:count 0
+attr interpolationmode none
+attr source dtnBundleReRouted
+attr title "dtnBundleReRouted, count"
+scalar dtnsim.node[3].dtn dtnBundleReceivedFromApp:count 270
+attr interpolationmode none
+attr source dtnBundleReceivedFromApp
+attr title "dtnBundleReceivedFromApp, count"
+scalar dtnsim.node[3].dtn dtnBundleReceivedFromCom:count 0
+attr interpolationmode none
+attr source dtnBundleReceivedFromCom
+attr title "dtnBundleReceivedFromCom, count"
+statistic dtnsim.node[3].dtn dtnBundleSentToAppRevisitedHops:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source dtnBundleSentToAppRevisitedHops
+attr title "dtnBundleSentToAppRevisitedHops, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+statistic dtnsim.node[3].dtn dtnBundleSentToAppHopCount:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source dtnBundleSentToAppHopCount
+attr title "dtnBundleSentToAppHopCount, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar dtnsim.node[3].dtn dtnBundleSentToApp:count 0
+attr interpolationmode none
+attr source dtnBundleSentToApp
+attr title "dtnBundleSentToApp, count"
+scalar dtnsim.node[3].dtn dtnBundleSentToCom:count 25
+attr interpolationmode none
+attr source dtnBundleSentToCom
+attr title "dtnBundleSentToCom, count"
+scalar dtnsim.node[4].app appBundleReceivedDelay:mean -nan
+attr interpolationmode none
+attr source appBundleReceivedDelay
+attr title "appBundleReceivedDelay, mean"
+scalar dtnsim.node[4].app appBundleReceivedDelay:max -nan
+attr interpolationmode none
+attr source appBundleReceivedDelay
+attr title "appBundleReceivedDelay, max"
+scalar dtnsim.node[4].app appBundleReceivedDelay:min -nan
+attr interpolationmode none
+attr source appBundleReceivedDelay
+attr title "appBundleReceivedDelay, min"
+statistic dtnsim.node[4].app appBundleReceivedDelay:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source appBundleReceivedDelay
+attr title "appBundleReceivedDelay, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar dtnsim.node[4].app appBundleReceivedHops:mean -nan
+attr interpolationmode none
+attr source appBundleReceivedHops
+attr title "appBundleReceivedHops, mean"
+scalar dtnsim.node[4].app appBundleReceivedHops:max -nan
+attr interpolationmode none
+attr source appBundleReceivedHops
+attr title "appBundleReceivedHops, max"
+scalar dtnsim.node[4].app appBundleReceivedHops:min -nan
+attr interpolationmode none
+attr source appBundleReceivedHops
+attr title "appBundleReceivedHops, min"
+statistic dtnsim.node[4].app appBundleReceivedHops:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source appBundleReceivedHops
+attr title "appBundleReceivedHops, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar dtnsim.node[4].app appBundleReceived:count 0
+attr interpolationmode none
+attr source appBundleReceived
+attr title "appBundleReceived, count"
+scalar dtnsim.node[4].app appBundleSent:count 17
+attr interpolationmode none
+attr source appBundleSent
+attr title "appBundleSent, count"
+scalar dtnsim.node[4].dtn sdrBundlesDeleted:max 0
+attr interpolationmode none
+attr source sdrBundlesDeleted
+attr title "sdrBundlesDeleted, max"
+scalar dtnsim.node[4].dtn dtnCgrCalls:count 42
+attr interpolationmode none
+attr source dtnCgrCalls
+attr title "dtnCgrCalls, count"
+scalar dtnsim.node[4].dtn routeCgrRouteTableEntriesExplored:max 1
+attr interpolationmode none
+attr source routeCgrRouteTableEntriesExplored
+attr title "routeCgrRouteTableEntriesExplored, max"
+scalar dtnsim.node[4].dtn routeCgrRouteTableEntriesExplored:sum 17
+attr interpolationmode none
+attr source routeCgrRouteTableEntriesExplored
+attr title "routeCgrRouteTableEntriesExplored, sum"
+scalar dtnsim.node[4].dtn routeCgrRouteTableEntriesCreated:max 1
+attr interpolationmode none
+attr source routeCgrRouteTableEntriesCreated
+attr title "routeCgrRouteTableEntriesCreated, max"
+scalar dtnsim.node[4].dtn routeCgrRouteTableEntriesCreated:sum 1
+attr interpolationmode none
+attr source routeCgrRouteTableEntriesCreated
+attr title "routeCgrRouteTableEntriesCreated, sum"
+scalar dtnsim.node[4].dtn routeCgrDijkstraLoops:sum 8
+attr interpolationmode none
+attr source routeCgrDijkstraLoops
+attr title "routeCgrDijkstraLoops, sum"
+scalar dtnsim.node[4].dtn routeCgrDijkstraCalls:sum 2
+attr interpolationmode none
+attr source routeCgrDijkstraCalls
+attr title "routeCgrDijkstraCalls, sum"
+scalar dtnsim.node[4].dtn sdrBytesStored:timeavg 5.4992592592593e-09
+attr interpolationmode none
+attr source sdrBytesStored
+attr title "sdrBytesStored, timeavg"
+scalar dtnsim.node[4].dtn sdrBytesStored:max 768
+attr interpolationmode none
+attr source sdrBytesStored
+attr title "sdrBytesStored, max"
+scalar dtnsim.node[4].dtn sdrBundleStored:timeavg 4.2962962962963e-11
+attr interpolationmode none
+attr source sdrBundleStored
+attr title "sdrBundleStored, timeavg"
+scalar dtnsim.node[4].dtn sdrBundleStored:max 6
+attr interpolationmode none
+attr source sdrBundleStored
+attr title "sdrBundleStored, max"
+scalar dtnsim.node[4].dtn sdrBundleStored:sum 100
+attr interpolationmode none
+attr source sdrBundleStored
+attr title "sdrBundleStored, sum"
+scalar dtnsim.node[4].dtn dtnBundleReRouted:count 0
+attr interpolationmode none
+attr source dtnBundleReRouted
+attr title "dtnBundleReRouted, count"
+scalar dtnsim.node[4].dtn dtnBundleReceivedFromApp:count 17
+attr interpolationmode none
+attr source dtnBundleReceivedFromApp
+attr title "dtnBundleReceivedFromApp, count"
+scalar dtnsim.node[4].dtn dtnBundleReceivedFromCom:count 25
+attr interpolationmode none
+attr source dtnBundleReceivedFromCom
+attr title "dtnBundleReceivedFromCom, count"
+statistic dtnsim.node[4].dtn dtnBundleSentToAppRevisitedHops:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source dtnBundleSentToAppRevisitedHops
+attr title "dtnBundleSentToAppRevisitedHops, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+statistic dtnsim.node[4].dtn dtnBundleSentToAppHopCount:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source dtnBundleSentToAppHopCount
+attr title "dtnBundleSentToAppHopCount, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar dtnsim.node[4].dtn dtnBundleSentToApp:count 0
+attr interpolationmode none
+attr source dtnBundleSentToApp
+attr title "dtnBundleSentToApp, count"
+scalar dtnsim.node[4].dtn dtnBundleSentToCom:count 42
+attr interpolationmode none
+attr source dtnBundleSentToCom
+attr title "dtnBundleSentToCom, count"
+scalar dtnsim.node[5].app appBundleReceivedDelay:mean -nan
+attr interpolationmode none
+attr source appBundleReceivedDelay
+attr title "appBundleReceivedDelay, mean"
+scalar dtnsim.node[5].app appBundleReceivedDelay:max -nan
+attr interpolationmode none
+attr source appBundleReceivedDelay
+attr title "appBundleReceivedDelay, max"
+scalar dtnsim.node[5].app appBundleReceivedDelay:min -nan
+attr interpolationmode none
+attr source appBundleReceivedDelay
+attr title "appBundleReceivedDelay, min"
+statistic dtnsim.node[5].app appBundleReceivedDelay:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source appBundleReceivedDelay
+attr title "appBundleReceivedDelay, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar dtnsim.node[5].app appBundleReceivedHops:mean -nan
+attr interpolationmode none
+attr source appBundleReceivedHops
+attr title "appBundleReceivedHops, mean"
+scalar dtnsim.node[5].app appBundleReceivedHops:max -nan
+attr interpolationmode none
+attr source appBundleReceivedHops
+attr title "appBundleReceivedHops, max"
+scalar dtnsim.node[5].app appBundleReceivedHops:min -nan
+attr interpolationmode none
+attr source appBundleReceivedHops
+attr title "appBundleReceivedHops, min"
+statistic dtnsim.node[5].app appBundleReceivedHops:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source appBundleReceivedHops
+attr title "appBundleReceivedHops, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar dtnsim.node[5].app appBundleReceived:count 0
+attr interpolationmode none
+attr source appBundleReceived
+attr title "appBundleReceived, count"
+scalar dtnsim.node[5].app appBundleSent:count 45
+attr interpolationmode none
+attr source appBundleSent
+attr title "appBundleSent, count"
+scalar dtnsim.node[5].dtn sdrBundlesDeleted:max 0
+attr interpolationmode none
+attr source sdrBundlesDeleted
+attr title "sdrBundlesDeleted, max"
+scalar dtnsim.node[5].dtn dtnCgrCalls:count 163
+attr interpolationmode none
+attr source dtnCgrCalls
+attr title "dtnCgrCalls, count"
+scalar dtnsim.node[5].dtn routeCgrRouteTableEntriesExplored:max 1
+attr interpolationmode none
+attr source routeCgrRouteTableEntriesExplored
+attr title "routeCgrRouteTableEntriesExplored, max"
+scalar dtnsim.node[5].dtn routeCgrRouteTableEntriesExplored:sum 45
+attr interpolationmode none
+attr source routeCgrRouteTableEntriesExplored
+attr title "routeCgrRouteTableEntriesExplored, sum"
+scalar dtnsim.node[5].dtn routeCgrRouteTableEntriesCreated:max 1
+attr interpolationmode none
+attr source routeCgrRouteTableEntriesCreated
+attr title "routeCgrRouteTableEntriesCreated, max"
+scalar dtnsim.node[5].dtn routeCgrRouteTableEntriesCreated:sum 1
+attr interpolationmode none
+attr source routeCgrRouteTableEntriesCreated
+attr title "routeCgrRouteTableEntriesCreated, sum"
+scalar dtnsim.node[5].dtn routeCgrDijkstraLoops:sum 11
+attr interpolationmode none
+attr source routeCgrDijkstraLoops
+attr title "routeCgrDijkstraLoops, sum"
+scalar dtnsim.node[5].dtn routeCgrDijkstraCalls:sum 2
+attr interpolationmode none
+attr source routeCgrDijkstraCalls
+attr title "routeCgrDijkstraCalls, sum"
+scalar dtnsim.node[5].dtn sdrBytesStored:timeavg 1.8204444444444e-08
+attr interpolationmode none
+attr source sdrBytesStored
+attr title "sdrBytesStored, timeavg"
+scalar dtnsim.node[5].dtn sdrBytesStored:max 1024
+attr interpolationmode none
+attr source sdrBytesStored
+attr title "sdrBytesStored, max"
+scalar dtnsim.node[5].dtn sdrBundleStored:timeavg 1.4222222222222e-10
+attr interpolationmode none
+attr source sdrBundleStored
+attr title "sdrBundleStored, timeavg"
+scalar dtnsim.node[5].dtn sdrBundleStored:max 8
+attr interpolationmode none
+attr source sdrBundleStored
+attr title "sdrBundleStored, max"
+scalar dtnsim.node[5].dtn sdrBundleStored:sum 355
+attr interpolationmode none
+attr source sdrBundleStored
+attr title "sdrBundleStored, sum"
+scalar dtnsim.node[5].dtn dtnBundleReRouted:count 0
+attr interpolationmode none
+attr source dtnBundleReRouted
+attr title "dtnBundleReRouted, count"
+scalar dtnsim.node[5].dtn dtnBundleReceivedFromApp:count 45
+attr interpolationmode none
+attr source dtnBundleReceivedFromApp
+attr title "dtnBundleReceivedFromApp, count"
+scalar dtnsim.node[5].dtn dtnBundleReceivedFromCom:count 118
+attr interpolationmode none
+attr source dtnBundleReceivedFromCom
+attr title "dtnBundleReceivedFromCom, count"
+statistic dtnsim.node[5].dtn dtnBundleSentToAppRevisitedHops:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source dtnBundleSentToAppRevisitedHops
+attr title "dtnBundleSentToAppRevisitedHops, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+statistic dtnsim.node[5].dtn dtnBundleSentToAppHopCount:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source dtnBundleSentToAppHopCount
+attr title "dtnBundleSentToAppHopCount, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar dtnsim.node[5].dtn dtnBundleSentToApp:count 0
+attr interpolationmode none
+attr source dtnBundleSentToApp
+attr title "dtnBundleSentToApp, count"
+scalar dtnsim.node[5].dtn dtnBundleSentToCom:count 163
+attr interpolationmode none
+attr source dtnBundleSentToCom
+attr title "dtnBundleSentToCom, count"
+scalar dtnsim.node[6].app appBundleReceivedDelay:mean -nan
+attr interpolationmode none
+attr source appBundleReceivedDelay
+attr title "appBundleReceivedDelay, mean"
+scalar dtnsim.node[6].app appBundleReceivedDelay:max -nan
+attr interpolationmode none
+attr source appBundleReceivedDelay
+attr title "appBundleReceivedDelay, max"
+scalar dtnsim.node[6].app appBundleReceivedDelay:min -nan
+attr interpolationmode none
+attr source appBundleReceivedDelay
+attr title "appBundleReceivedDelay, min"
+statistic dtnsim.node[6].app appBundleReceivedDelay:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source appBundleReceivedDelay
+attr title "appBundleReceivedDelay, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar dtnsim.node[6].app appBundleReceivedHops:mean -nan
+attr interpolationmode none
+attr source appBundleReceivedHops
+attr title "appBundleReceivedHops, mean"
+scalar dtnsim.node[6].app appBundleReceivedHops:max -nan
+attr interpolationmode none
+attr source appBundleReceivedHops
+attr title "appBundleReceivedHops, max"
+scalar dtnsim.node[6].app appBundleReceivedHops:min -nan
+attr interpolationmode none
+attr source appBundleReceivedHops
+attr title "appBundleReceivedHops, min"
+statistic dtnsim.node[6].app appBundleReceivedHops:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source appBundleReceivedHops
+attr title "appBundleReceivedHops, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar dtnsim.node[6].app appBundleReceived:count 0
+attr interpolationmode none
+attr source appBundleReceived
+attr title "appBundleReceived, count"
+scalar dtnsim.node[6].app appBundleSent:count 38
+attr interpolationmode none
+attr source appBundleSent
+attr title "appBundleSent, count"
+scalar dtnsim.node[6].dtn sdrBundlesDeleted:max 0
+attr interpolationmode none
+attr source sdrBundlesDeleted
+attr title "sdrBundlesDeleted, max"
+scalar dtnsim.node[6].dtn dtnCgrCalls:count 201
+attr interpolationmode none
+attr source dtnCgrCalls
+attr title "dtnCgrCalls, count"
+scalar dtnsim.node[6].dtn routeCgrRouteTableEntriesExplored:max 1
+attr interpolationmode none
+attr source routeCgrRouteTableEntriesExplored
+attr title "routeCgrRouteTableEntriesExplored, max"
+scalar dtnsim.node[6].dtn routeCgrRouteTableEntriesExplored:sum 38
+attr interpolationmode none
+attr source routeCgrRouteTableEntriesExplored
+attr title "routeCgrRouteTableEntriesExplored, sum"
+scalar dtnsim.node[6].dtn routeCgrRouteTableEntriesCreated:max 1
+attr interpolationmode none
+attr source routeCgrRouteTableEntriesCreated
+attr title "routeCgrRouteTableEntriesCreated, max"
+scalar dtnsim.node[6].dtn routeCgrRouteTableEntriesCreated:sum 1
+attr interpolationmode none
+attr source routeCgrRouteTableEntriesCreated
+attr title "routeCgrRouteTableEntriesCreated, sum"
+scalar dtnsim.node[6].dtn routeCgrDijkstraLoops:sum 12
+attr interpolationmode none
+attr source routeCgrDijkstraLoops
+attr title "routeCgrDijkstraLoops, sum"
+scalar dtnsim.node[6].dtn routeCgrDijkstraCalls:sum 2
+attr interpolationmode none
+attr source routeCgrDijkstraCalls
+attr title "routeCgrDijkstraCalls, sum"
+scalar dtnsim.node[6].dtn sdrBytesStored:timeavg 1.6877037037037e-08
+attr interpolationmode none
+attr source sdrBytesStored
+attr title "sdrBytesStored, timeavg"
+scalar dtnsim.node[6].dtn sdrBytesStored:max 1024
+attr interpolationmode none
+attr source sdrBytesStored
+attr title "sdrBytesStored, max"
+scalar dtnsim.node[6].dtn sdrBundleStored:timeavg 1.3185185185185e-10
+attr interpolationmode none
+attr source sdrBundleStored
+attr title "sdrBundleStored, timeavg"
+scalar dtnsim.node[6].dtn sdrBundleStored:max 8
+attr interpolationmode none
+attr source sdrBundleStored
+attr title "sdrBundleStored, max"
+scalar dtnsim.node[6].dtn sdrBundleStored:sum 379
+attr interpolationmode none
+attr source sdrBundleStored
+attr title "sdrBundleStored, sum"
+scalar dtnsim.node[6].dtn dtnBundleReRouted:count 0
+attr interpolationmode none
+attr source dtnBundleReRouted
+attr title "dtnBundleReRouted, count"
+scalar dtnsim.node[6].dtn dtnBundleReceivedFromApp:count 38
+attr interpolationmode none
+attr source dtnBundleReceivedFromApp
+attr title "dtnBundleReceivedFromApp, count"
+scalar dtnsim.node[6].dtn dtnBundleReceivedFromCom:count 163
+attr interpolationmode none
+attr source dtnBundleReceivedFromCom
+attr title "dtnBundleReceivedFromCom, count"
+statistic dtnsim.node[6].dtn dtnBundleSentToAppRevisitedHops:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source dtnBundleSentToAppRevisitedHops
+attr title "dtnBundleSentToAppRevisitedHops, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+statistic dtnsim.node[6].dtn dtnBundleSentToAppHopCount:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source dtnBundleSentToAppHopCount
+attr title "dtnBundleSentToAppHopCount, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar dtnsim.node[6].dtn dtnBundleSentToApp:count 0
+attr interpolationmode none
+attr source dtnBundleSentToApp
+attr title "dtnBundleSentToApp, count"
+scalar dtnsim.node[6].dtn dtnBundleSentToCom:count 201
+attr interpolationmode none
+attr source dtnBundleSentToCom
+attr title "dtnBundleSentToCom, count"
+scalar dtnsim.node[7].app appBundleReceivedDelay:mean 2.9357213930348e-07
+attr interpolationmode none
+attr source appBundleReceivedDelay
+attr title "appBundleReceivedDelay, mean"
+scalar dtnsim.node[7].app appBundleReceivedDelay:max 8.96e-07
+attr interpolationmode none
+attr source appBundleReceivedDelay
+attr title "appBundleReceivedDelay, max"
+scalar dtnsim.node[7].app appBundleReceivedDelay:min 0
+attr interpolationmode none
+attr source appBundleReceivedDelay
+attr title "appBundleReceivedDelay, min"
+statistic dtnsim.node[7].app appBundleReceivedDelay:histogram
+field count 201
+field mean 2.9357213930348e-07
+field stddev 2.6258437885735e-07
+field min 0
+field max 8.96e-07
+field sum 5.9008e-05
+field sqrsum 3.1113216e-11
+attr interpolationmode none
+attr source appBundleReceivedDelay
+attr title "appBundleReceivedDelay, histogram"
+bin	-inf	0
+bin	0	48
+bin	2e-08	0
+bin	4e-08	0
+bin	6e-08	0
+bin	8e-08	0
+bin	1e-07	0
+bin	1.2e-07	43
+bin	1.4e-07	0
+bin	1.6e-07	0
+bin	1.8e-07	0
+bin	2e-07	0
+bin	2.2e-07	0
+bin	2.4e-07	29
+bin	2.6e-07	0
+bin	2.8e-07	0
+bin	3e-07	0
+bin	3.2e-07	0
+bin	3.4e-07	0
+bin	3.6e-07	0
+bin	3.8e-07	26
+bin	4e-07	0
+bin	4.2e-07	0
+bin	4.4e-07	0
+bin	4.6e-07	0
+bin	4.8e-07	0
+bin	5e-07	20
+bin	5.2e-07	0
+bin	5.4e-07	0
+bin	5.6e-07	0
+bin	5.8e-07	0
+bin	6e-07	0
+bin	6.2e-07	15
+bin	6.4e-07	0
+bin	6.6e-07	0
+bin	6.8e-07	0
+bin	7e-07	0
+bin	7.2e-07	0
+bin	7.4e-07	0
+bin	7.6e-07	13
+bin	7.8e-07	0
+bin	8e-07	0
+bin	8.2e-07	0
+bin	8.4e-07	0
+bin	8.6e-07	0
+bin	8.8e-07	7
+bin	9e-07	0
+bin	9.2e-07	0
+bin	9.4e-07	0
+bin	9.6e-07	0
+bin	9.8e-07	0
+bin	1e-06	0
+bin	1.02e-06	0
+bin	1.04e-06	0
+bin	1.06e-06	0
+bin	1.08e-06	0
+bin	1.1e-06	0
+bin	1.12e-06	0
+scalar dtnsim.node[7].app appBundleReceivedHops:mean 2.7164179104478
+attr interpolationmode none
+attr source appBundleReceivedHops
+attr title "appBundleReceivedHops, mean"
+scalar dtnsim.node[7].app appBundleReceivedHops:max 4
+attr interpolationmode none
+attr source appBundleReceivedHops
+attr title "appBundleReceivedHops, max"
+scalar dtnsim.node[7].app appBundleReceivedHops:min 1
+attr interpolationmode none
+attr source appBundleReceivedHops
+attr title "appBundleReceivedHops, min"
+statistic dtnsim.node[7].app appBundleReceivedHops:histogram
+field count 201
+field mean 2.7164179104478
+field stddev 1.106426276115
+field min 1
+field max 4
+field sum 546
+field sqrsum 1728
+attr interpolationmode none
+attr source appBundleReceivedHops
+attr title "appBundleReceivedHops, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	38
+bin	2	45
+bin	3	54
+bin	4	64
+bin	5	0
+scalar dtnsim.node[7].app appBundleReceived:count 201
+attr interpolationmode none
+attr source appBundleReceived
+attr title "appBundleReceived, count"
+scalar dtnsim.node[7].app appBundleSent:count 0
+attr interpolationmode none
+attr source appBundleSent
+attr title "appBundleSent, count"
+scalar dtnsim.node[7].dtn sdrBundlesDeleted:max -nan
+attr interpolationmode none
+attr source sdrBundlesDeleted
+attr title "sdrBundlesDeleted, max"
+scalar dtnsim.node[7].dtn dtnCgrCalls:count 0
+attr interpolationmode none
+attr source dtnCgrCalls
+attr title "dtnCgrCalls, count"
+scalar dtnsim.node[7].dtn routeCgrRouteTableEntriesExplored:max -nan
+attr interpolationmode none
+attr source routeCgrRouteTableEntriesExplored
+attr title "routeCgrRouteTableEntriesExplored, max"
+scalar dtnsim.node[7].dtn routeCgrRouteTableEntriesExplored:sum 0
+attr interpolationmode none
+attr source routeCgrRouteTableEntriesExplored
+attr title "routeCgrRouteTableEntriesExplored, sum"
+scalar dtnsim.node[7].dtn routeCgrRouteTableEntriesCreated:max -nan
+attr interpolationmode none
+attr source routeCgrRouteTableEntriesCreated
+attr title "routeCgrRouteTableEntriesCreated, max"
+scalar dtnsim.node[7].dtn routeCgrRouteTableEntriesCreated:sum 0
+attr interpolationmode none
+attr source routeCgrRouteTableEntriesCreated
+attr title "routeCgrRouteTableEntriesCreated, sum"
+scalar dtnsim.node[7].dtn routeCgrDijkstraLoops:sum 0
+attr interpolationmode none
+attr source routeCgrDijkstraLoops
+attr title "routeCgrDijkstraLoops, sum"
+scalar dtnsim.node[7].dtn routeCgrDijkstraCalls:sum 0
+attr interpolationmode none
+attr source routeCgrDijkstraCalls
+attr title "routeCgrDijkstraCalls, sum"
+scalar dtnsim.node[7].dtn sdrBytesStored:timeavg 0
+attr interpolationmode none
+attr source sdrBytesStored
+attr title "sdrBytesStored, timeavg"
+scalar dtnsim.node[7].dtn sdrBytesStored:max 0
+attr interpolationmode none
+attr source sdrBytesStored
+attr title "sdrBytesStored, max"
+scalar dtnsim.node[7].dtn sdrBundleStored:timeavg 0
+attr interpolationmode none
+attr source sdrBundleStored
+attr title "sdrBundleStored, timeavg"
+scalar dtnsim.node[7].dtn sdrBundleStored:max 0
+attr interpolationmode none
+attr source sdrBundleStored
+attr title "sdrBundleStored, max"
+scalar dtnsim.node[7].dtn sdrBundleStored:sum 0
+attr interpolationmode none
+attr source sdrBundleStored
+attr title "sdrBundleStored, sum"
+scalar dtnsim.node[7].dtn dtnBundleReRouted:count 0
+attr interpolationmode none
+attr source dtnBundleReRouted
+attr title "dtnBundleReRouted, count"
+scalar dtnsim.node[7].dtn dtnBundleReceivedFromApp:count 0
+attr interpolationmode none
+attr source dtnBundleReceivedFromApp
+attr title "dtnBundleReceivedFromApp, count"
+scalar dtnsim.node[7].dtn dtnBundleReceivedFromCom:count 201
+attr interpolationmode none
+attr source dtnBundleReceivedFromCom
+attr title "dtnBundleReceivedFromCom, count"
+statistic dtnsim.node[7].dtn dtnBundleSentToAppRevisitedHops:histogram
+field count 201
+field mean 0
+field stddev 0
+field min 0
+field max 0
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source dtnBundleSentToAppRevisitedHops
+attr title "dtnBundleSentToAppRevisitedHops, histogram"
+bin	-inf	0
+bin	-0.5	0
+bin	-0.48	0
+bin	-0.46	0
+bin	-0.44	0
+bin	-0.42	0
+bin	-0.4	0
+bin	-0.38	0
+bin	-0.36	0
+bin	-0.34	0
+bin	-0.32	0
+bin	-0.3	0
+bin	-0.28	0
+bin	-0.26	0
+bin	-0.24	0
+bin	-0.22	0
+bin	-0.2	0
+bin	-0.18	0
+bin	-0.16	0
+bin	-0.14	0
+bin	-0.12	0
+bin	-0.1	0
+bin	-0.08	0
+bin	-0.06	0
+bin	-0.04	0
+bin	-0.02	0
+bin	0	201
+bin	0.02	0
+bin	0.04	0
+bin	0.06	0
+bin	0.08	0
+bin	0.1	0
+bin	0.12	0
+bin	0.14	0
+bin	0.16	0
+bin	0.18	0
+bin	0.2	0
+bin	0.22	0
+bin	0.24	0
+bin	0.26	0
+bin	0.28	0
+bin	0.3	0
+bin	0.32	0
+bin	0.34	0
+bin	0.36	0
+bin	0.38	0
+bin	0.4	0
+bin	0.42	0
+bin	0.44	0
+bin	0.46	0
+bin	0.48	0
+bin	0.5	0
+statistic dtnsim.node[7].dtn dtnBundleSentToAppHopCount:histogram
+field count 201
+field mean 2.7164179104478
+field stddev 1.106426276115
+field min 1
+field max 4
+field sum 546
+field sqrsum 1728
+attr interpolationmode none
+attr source dtnBundleSentToAppHopCount
+attr title "dtnBundleSentToAppHopCount, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	38
+bin	2	45
+bin	3	54
+bin	4	64
+bin	5	0
+scalar dtnsim.node[7].dtn dtnBundleSentToApp:count 201
+attr interpolationmode none
+attr source dtnBundleSentToApp
+attr title "dtnBundleSentToApp, count"
+scalar dtnsim.node[7].dtn dtnBundleSentToCom:count 0
+attr interpolationmode none
+attr source dtnBundleSentToCom
+attr title "dtnBundleSentToCom, count"
+scalar dtnsim.central pairsOfNodesWithAtLeastOneRoute:sum 0
+attr interpolationmode none
+attr source pairsOfNodesWithAtLeastOneRoute
+attr title "pairsOfNodesWithAtLeastOneRoute, sum"
+scalar dtnsim.central availableRoutes:sum 0
+attr interpolationmode none
+attr source availableRoutes
+attr title "availableRoutes, sum"
+scalar dtnsim.central totalRoutes:sum 0
+attr interpolationmode none
+attr source totalRoutes
+attr title "totalRoutes, sum"
+scalar dtnsim.central contactsNumber:sum 12
+attr interpolationmode none
+attr source contactsNumber
+attr title "contactsNumber, sum"
+
